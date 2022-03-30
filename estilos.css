@@ -1,0 +1,422 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+*{
+    margin: 0;
+    left: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    min-height: 1000px;
+}
+
+.banner{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:linear-gradient(rgba(5,7,12,0.75), rgba(5,7,12,0.75)), url("sala-de-cine.jpg");
+    background-size: cover ;
+}
+
+.banner .contenedor{
+    width: 900px;
+    text-align: center;
+}
+
+.banner .contenedor p{
+    color:rgb(202, 202, 202);
+    font-size: 1em;
+    text-transform: uppercase;
+}
+
+.banner .contenedor h2{
+    color: #fff;
+    font-size: 9em;
+    font-family: 'Lobster', sans-serif;
+    letter-spacing: 4px;
+}
+
+.btn{
+    top: 0;
+    left: 0;
+    margin: 20px;
+    text-decoration: none;
+    letter-spacing: 2px;
+    padding: 10px 30px;
+    font-size: 1em;
+    background: #F1110F;
+    color: #fff;
+    display: inline-block;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.btn:hover{
+    letter-spacing: 6px;
+}
+
+header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 40px 100px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+
+header.sticky{
+    background: #fff;
+    padding: 10px 100px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+header .logo{
+    text-decoration: none;
+    color: #fff;
+    font-size: 2em;
+    font-weight: 700;
+}
+
+header.sticky .logo{
+    color: #111;
+    
+}
+
+header .logo span{
+    color:#F1110F;
+}
+
+header .navegador{
+    position: relative;
+    display: flex;
+}
+
+header .navegador li{
+    list-style: none;
+    margin-left: 30px;
+}
+
+header .navegador li a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+header.sticky .navegador li a{
+    color:#000;
+}
+
+header .navegador li a:hover{
+    color:#F1110F;
+}
+
+section{
+    padding: 100px;
+}
+
+.row{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.row .col50{
+    position: relative;
+    width: 48%;
+}
+
+.Titulo-texto{
+    font-size: 2em;
+    color: #111;
+    font-weight: 300;
+}
+
+.Titulo-texto span{
+    color:#F1110F;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+.row .col50 .imgBx{
+    position: relative;
+    width: 100% ;
+    height: 100%;
+}   
+
+.row .col50 .imgBx img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+}
+
+.row .col50 .imgBx iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.titulo{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+    
+
+.catalogo .contenido{
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    margin-top: 40px;
+
+    
+}
+
+.catalogo .contenido .box{
+    width: 340px;
+    margin: 20px;
+    border: 15px solid #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+
+
+    
+}
+
+.catalogo .contenido .box .imgBx{
+    position: relative;
+    width: 100%;
+    height: 500px;
+}
+
+.catalogo .contenido .box .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.catalogo .contenido .box .texto{
+    padding: 15px 0px 5px ;
+}
+
+.catalogo .contenido .box .texto h3{
+    font-weight: 300;
+    
+}
+
+.sugerencias{
+
+    background: linear-gradient(rgb(255, 255, 255), rgba(255, 255, 255, 0.575)),url(retro-cinema-film-camera-vector-background.jpg);
+    background-size: cover;
+    background-position: 37em;
+}
+
+.contactar{
+    padding: 75px 50px;
+    background: #fff;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin-top: 50px;
+}
+
+.contactar h3{
+    color: #111;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.contactar .inputBox{
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.contactar .inputBox input{
+    width: 100%;
+    border: 1px solid #555;
+    padding: 10px;
+    color: #111;
+    outline: none;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.contactar .inputBox input[type="submit"]{
+    font-size: 1em;
+    color: #fff;
+    background: #F1110F;
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    max-width: 100px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+.derechos{
+    padding: 8px 40px;
+    border-top: 1px solid rgba(0, 0, 0, 0.01);
+    text-align: center;
+}
+
+.derechos p{
+    color: #333;
+}
+
+.derechos span{
+    color: #F1110F;
+}
+
+
+
+@media (max-width:991px){
+
+    header,
+    header.sticky{
+        padding:10px 20px;
+    }
+
+    header .navegador {
+        
+        display: none;
+    }
+
+    header .navegador.active{
+        width: 100%;
+        height: calc(100% - 68px);
+        position: fixed;
+        top: 68px;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: #fff;
+    }
+
+    header .navegador li{
+    
+        margin-left: 0;
+    }
+
+    header .navegador li a{
+        color: #111;
+        font-size: 1.6em;
+    }
+
+    .funcionNav{
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background: url(menu.png);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+    }
+
+    .funcionNav.active{
+        background: url(close.png);
+        background-size: 25px;
+        background-position: center;
+        background-repeat: no-repeat;
+        cursor: pointer;
+    
+        
+    }
+
+    header.sticky .funcionNav{
+        filter: invert(1);
+    }
+
+    section{
+        padding: 20px;
+    }
+
+    .banner .contenedor h2 {
+        color: #fff;
+        font-size: 4em;
+
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .row .col50 {
+        position: relative;
+        width: 100%;
+    }
+
+    .row .col50 .imgBx {
+        
+        height: 300px;
+        margin-top: 20px;
+    }
+
+   
+
+    .catalogo .contenido .box {
+        
+        margin: 10px;
+
+    }
+
+    .catalogo .contenido .box .imgBx {
+        height: 396px;
+    }
+
+    
+
+    .sugerencias{
+        background: #fff;
+        justify-content: center ;
+    }
+
+    .contactar{
+        
+        padding: 35px 40px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        
+    }
+
+   
+}
+
+@media (max-width:480px){
+
+    .banner .contenido h2{
+        font-size: 2.2em;
+        color: #fff;
+    }
+}

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PelisFree</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="icon" href="video-player.png">
+</head>
+
+<style>
+    
+</style>
+<body>
+    <header>
+        <a href="#home" class="logo">PelisFree<span>.</span></a>
+        <div class="funcionNav" onclick="navFuncion();"></div>
+        <ul class="navegador">
+            <li><a href="#home" onclick="navFuncion();" >Inicio</a></li>
+            <li><a href="#catalogo" onclick="navFuncion();">Catalogo</a></li>
+            <li><a href="#nosotros" onclick="navFuncion();">Nosotros</a></li>
+            <li><a href="#sugerencias" onclick="navFuncion();">Sugerencias</a></li>
+        </ul>
+    </header>
+
+    <section class="banner" id="home">
+        <div class="contenedor">
+            <h2>PelisFree</h2>
+            <p>Encontraras todo lo que deseas ver! Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum itaque et illo suscipit eum. Fuga nobis, doloremque saepe sit ea ad ducimus. Numquam aliquam facere a laudantium accusamus officiis mollitia!</p>
+            <a href="#catalogo" class="btn">catalogo</a>
+        </div>
+    </section>
+
+    <section class="catalogo" id="catalogo">
+        <div class="titulo">
+            <h2 class="Titulo-texto"><span>C</span>atalogo</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+        </div>
+
+        <div class="contenido">
+            <div class="box">
+                <div class="imgBx">
+                    <img src="catalogo/Euphoria_Serie_de_TV-799981057-large.jpg" alt="">
+                </div>
+
+                <div class="texto">
+                    <h3>Euphoria</h3>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="imgBx">
+                    <img src="catalogo/Friends_The_Reunion_TV-947193043-large.jpg" alt="">
+                </div>
+
+                <div class="texto">
+                    <h3>Friends The Reunion</h3>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="imgBx">
+                    <img src="catalogo/Harry_Potter_Regreso_a_Hogwarts_TV-882305767-large.jpg" alt="">
+                </div>
+
+                <div class="texto">
+                    <h3>Harry Potter</h3>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <div class="imgBx">
+                    <img src="catalogo/HT.jpg" alt="">
+                </div>
+
+                <div class="texto">
+                    <h3>Hotel Transylvania</h3>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <div class="imgBx">
+                    <img src="catalogo/madre_solo_hay_dos_tv_series-145401650-large.jpg" alt="">
+                </div>
+
+                <div class="texto">
+                    <h3>Madre solo hay dos</h3>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="imgBx">
+                    <img src="catalogo/michael-schumacher-film.jpg" alt="">
+                </div>
+
+                <div class="texto">
+                    <h3>Mihael-Schumacher</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="titulo">
+            <a href="catalogo.html" class="btn">Ver Todo</a>
+        </div>
+    </section>
+    
+    
+    
+
+    <section class="nosotros" id="nosotros">
+        <div class="row">
+            <div class="col50">
+                <h2 class="Titulo-texto"><span>N</span>osotros</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, ab? Explicabo distinctio minima voluptatum ab enim facilis! Similique optio ducimus officia, molestias vitae necessitatibus laborum, ad enim dicta delectus laudantium.
+                Possimus minus, velit hic nostrum, voluptatem odio impedit ratione et maxime ab repellat! Fuga aperiam fugit explicabo magni sit excepturi aliquid sunt temporibus dignissimos vel, quos reiciendis tempore, corrupti sint!</p> <br><br> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione consequatur nostrum consequuntur recusandae, ad vel laboriosam repudiandae! Doloribus sint pariatur, error molestias voluptatem voluptatibus harum, aliquam voluptatum nesciunt, sit quisquam.
+            </div>
+        
+
+        <div class="col50">
+            
+            <div class="imgBx">
+                <img src="cine.jpg" alt="">
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="sugerencias" id="sugerencias">
+    <div class="titulo">
+        <h2 class="Titulo-texto"><span>S</span>ugerencias</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus voluptatum praesentium quo et distinctio quos laborum repellat maxime commodi consequatur laboriosam, ipsam illo nemo necessitatibus saepe error rem ut sapiente.</p>
+    </div>
+
+    <div class="contactar">
+        <h3>¿Que peliculas quieres?</h3>
+        <div class="inputBox">
+            <input type="text" placeholder="Nombre">
+        </div>
+
+
+        <div class="inputBox">
+            <input type="text" placeholder="Email">
+        </div>
+
+        <div class="inputBox">
+            <input type="text" placeholder="Nombre Pelicula">
+        </div>
+
+        
+        <div class="inputBox">
+            <input type="submit" value="Enviar">
+        </div>
+    </div>
+    </div>
+
+        
+    </section>
+    
+    <div class="derechos">
+        <p>Copyright 2022 <span> Edinson Morales</span> Todos los derechos reservados</p>
+    </div>
+
+    
+    <script type="text/javascript">
+        window.addEventListener('scroll', function(){
+            const header = document.querySelector('header');
+            header.classList.toggle("sticky", window.scrollY > 0)
+        })
+
+
+        function navFuncion(){
+            const funcionNav = document.querySelector('.funcionNav');
+            const navegador= document.querySelector('.navegador')
+            funcionNav.classList.toggle('active');
+            navegador.classList.toggle('active')
+        }
+    </script>
+
+
+</body>
+</html>

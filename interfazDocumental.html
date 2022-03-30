@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documental</title>
+    <link rel="stylesheet" href="estilos.css">
+    
+</head>
+<body>
+    <style>
+        body{
+        min-height: 0px;
+    }
+
+    @media (max-width:991px){
+    .Titulo-texto {
+    margin-top: 50px;
+    }
+    }
+    </style>
+    <header class="sticky">
+        <a href="#home" class="logo">PelisFree<span>.</span></a>
+        <div class="funcionNav" onclick="navFuncion();"></div>
+        <ul class="navegador">
+            <li><a href="index.html" onclick="navFuncion();" >Inicio</a></li>
+            <li><a href="catalogo.html" onclick="navFuncion();">Peliculas</a></li>
+            <li><a href="catalogo.html" onclick="navFuncion();">Series</a></li>
+            <li><a href="catalogo.html" onclick="navFuncion();">Documentales</a></li>
+        </ul>
+        
+    </header>
+
+    <section class="nosotros" id="nosotros">
+        <div class="row">
+            <div class="col50">
+                <h2 class="Titulo-texto"><span>D</span>ocumental X</h2>
+                <h3>Sinopsis:</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, ab? Explicabo distinctio minima voluptatum ab enim facilis! Similique optio ducimus officia, molestias vitae necessitatibus laborum, ad enim dicta delectus laudantium.
+                Possimus minus, velit hic nostrum, voluptatem odio impedit ratione et maxime ab repellat! Fuga aperiam fugit explicabo magni sit excepturi aliquid sunt temporibus dignissimos vel, quos reiciendis tempore, corrupti sint!</p> <br><br> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione consequatur nostrum consequuntur recusandae, ad vel laboriosam repudiandae! Doloribus sint pariatur, error molestias voluptatem voluptatibus harum, aliquam voluptatum nesciunt, sit quisquam.
+            </div>
+        
+
+        <div class="col50">
+            
+            <div class="imgBx">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/ZKCR4-ynzfc?start=76" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+    <script type="text/javascript">
+     
+
+
+        function navFuncion(){
+            const funcionNav = document.querySelector('.funcionNav');
+            const navegador= document.querySelector('.navegador')
+            funcionNav.classList.toggle('active');
+            navegador.classList.toggle('active')
+        }
+    </script>
+</body>
+</html>
